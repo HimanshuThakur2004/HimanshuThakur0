@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Thakur CMS Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body class="cms-body">
+  <!-- Login Screen -->
+  <section class="cms-login-screen" id="cms-login-screen">
+    <div class="cms-login-card">
+      <div class="brand-logo" style="margin-bottom:18px;">
+        <span class="brand-mark">HT</span>
+        <span class="brand-sub">CMS PORTAL</span>
+      </div>
+      <h1>Sign in to Portfolio CMS</h1>
+      <p class="muted-copy">Manage your hero video, story formats, commercial work, Masaan series, and inquiries.</p>
+
+      <form id="cms-login-form" class="modal-form">
+        <div class="modal-field">
+          <label for="login-user">Username</label>
+          <input id="login-user" type="text" value="admin" required autocomplete="username" />
+        </div>
+        <div class="modal-field">
+          <label for="login-pass">Password</label>
+          <input id="login-pass" type="password" value="creator2026" required autocomplete="current-password" />
+        </div>
+        <p class="cms-login-error" id="cms-login-error" hidden>Invalid username or password.</p>
+        <button type="submit" class="btn-pill-orange" style="padding:12px; width:100%;">Unlock CMS Portal</button>
+      </form>
+
+      <div class="cms-login-hint">
+        Default credentials: <code>admin</code> / <code>creator2026</code>
+        <br />
+        <a href="index.html" class="text-link-orange" style="margin-top:8px;">← Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authenticated CMS Workspace -->
+  <div class="cms-shell" id="cms-shell" hidden>
+    <!-- Sidebar -->
+    <aside class="cms-sidebar">
+      <div class="cms-sidebar-head">
+        <div class="brand-logo">
+          <span class="brand-mark" id="cms-brand-mark">SF</span>
+          <span class="brand-sub">CMS PORTAL</span>
+        </div>
+        <span class="cms-mode-badge" id="cms-mode-badge">Checking...</span>
+      </div>
+
+      <nav class="cms-nav" id="cms-nav">
+        <button class="cms-nav-btn is-active" data-tab="overview">Overview</button>
+        <button class="cms-nav-btn" data-tab="brand-hero">Brand &amp; Hero</button>
+        <button class="cms-nav-btn" data-tab="formats">Story Formats</button>
+        <button class="cms-nav-btn" data-tab="metrics-brands">Metrics &amp; Brands</button>
+        <button class="cms-nav-btn" data-tab="personal">Masaan / Personal</button>
+        <button class="cms-nav-btn" data-tab="courses">Commercial Work</button>
+        <button class="cms-nav-btn" data-tab="essays">Originals &amp; Notes</button>
+        <button class="cms-nav-btn" data-tab="vibe">Behind The Camera</button>
+        <button class="cms-nav-btn" data-tab="contact">Contact &amp; Security</button>
+        <button class="cms-nav-btn" data-tab="inquiries">
+          Inquiries <span class="cms-count-pill" id="inbox-count-pill">0</span>
+        </button>
+      </nav>
+
+      <div class="cms-sidebar-foot">
+        <a href="index.html" target="_blank" class="cms-outline-btn">Preview Live Site ↗</a>
+        <button type="button" class="cms-outline-btn" id="cms-logout-btn">Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- Main Editor Area -->
+    <div class="cms-main">
+      <header class="cms-topbar">
+        <div>
+          <h2 class="cms-topbar-title" id="cms-tab-title">Overview</h2>
+          <p class="cms-save-status" id="cms-save-status">All changes synced</p>
+        </div>
+        <div class="cms-topbar-actions">
+          <button type="button" class="cms-outline-btn" id="cms-export-btn">Export JSON</button>
+          <label class="cms-outline-btn" style="cursor:pointer;">
+            Import JSON
+            <input type="file" id="cms-import-input" accept="application/json" hidden />
+          </label>
+          <button type="button" class="btn-pill-orange" id="cms-save-btn">Save Changes</button>
+        </div>
+      </header>
+
+      <div class="cms-content-area" id="cms-content-area"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="site-toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data-store.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

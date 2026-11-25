@@ -1,0 +1,210 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio CMS Content"
+    delete: false
+    files:
+      - name: "cms_content"
+        label: "Site Content (data/cms-content.json)"
+        file: "data/cms-content.json"
+        format: "json"
+        fields:
+          - label: "Site Identity & Navigation"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Brand Name", name: "brandName", widget: "string" }
+              - { label: "Logo Image", name: "logoImage", widget: "image", required: false }
+              - { label: "Brand Mark Top", name: "brandMarkTop", widget: "string" }
+              - { label: "Brand Mark Subtitle", name: "brandMarkSub", widget: "string" }
+              - { label: "Footer Watermark Text", name: "watermarkText", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Copyright", name: "copyright", widget: "string" }
+              - { label: "Origin Note", name: "originNote", widget: "string" }
+              - { label: "Default Theme", name: "defaultTheme", widget: "select", options: ["dark", "light"], default: "dark" }
+              - { label: "Header CTA Label", name: "ctaLabel", widget: "string" }
+              - { label: "Header CTA Target", name: "ctaTarget", widget: "string" }
+              - label: "Social Links"
+                name: "socials"
+                widget: "object"
+                fields:
+                  - { label: "YouTube URL", name: "youtube", widget: "string", required: false }
+                  - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+                  - { label: "X / Twitter URL", name: "x", widget: "string", required: false }
+                  - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+                  - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Background Video (.mp4/.webm)", name: "videoUrl", widget: "file", required: false }
+              - { label: "Fallback Hero Image", name: "image", widget: "image" }
+              - { label: "Hero Image Alt Text", name: "imageAlt", widget: "string", required: false }
+              - { label: "About Me Title", name: "aboutTitle", widget: "string", required: false }
+              - { label: "About Me Bio", name: "aboutText", widget: "text", required: false }
+
+          - label: "Who I Am (About Section)"
+            name: "aboutSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text" }
+              - { label: "Portrait Image", name: "portraitImage", widget: "image" }
+              - { label: "Portrait Badge", name: "portraitBadge", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Profession", name: "profession", widget: "string" }
+              - { label: "Education", name: "education", widget: "string" }
+              - { label: "Skills", name: "skills", widget: "string" }
+              - { label: "Work Summary", name: "work", widget: "string" }
+
+          - label: "How I Tell My Stories (Formats)"
+            name: "formatsSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Format Cards"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Card Image or Video", name: "image", widget: "file" }
+                  - { label: "Expanded by Default", name: "expanded", widget: "boolean", default: false }
+
+          - label: "Portfolio Impact Metrics"
+            name: "metrics"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Primary Number", name: "primaryNumber", widget: "string" }
+              - { label: "Primary Suffix", name: "primarySuffix", widget: "string" }
+              - label: "Metric Rows"
+                name: "rows"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value", name: "value", widget: "string" }
+
+          - label: "Trusted Brands"
+            name: "brandsSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Brands"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Brand Name", name: "name", widget: "string" }
+                  - { label: "Monogram Icon", name: "icon", widget: "string", required: false }
+
+          - label: "What I Have Created Personally (MASAAN)"
+            name: "personalSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Genre Tags (comma separated)", name: "genre", widget: "string" }
+              - { label: "Background Trailer Video (.mp4/.webm)", name: "videoUrl", widget: "file", required: false }
+              - { label: "Fallback Poster Image", name: "posterImage", widget: "image", required: false }
+              - { label: "Status Badge", name: "statusBadge", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "CTA Label", name: "ctaLabel", widget: "string" }
+              - { label: "CTA URL", name: "ctaUrl", widget: "string" }
+
+          - label: "Commercial Work"
+            name: "coursesSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Projects / Reels"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Project Title", name: "title", widget: "string" }
+                  - { label: "Type", name: "type", widget: "select", options: ["REELS EDIT", "COMMERCIAL", "BRAND FILM", "CAMPAIGN", "SHORT FILM"] }
+                  - { label: "Industry / Topic", name: "topic", widget: "string" }
+                  - { label: "Featured Badge", name: "flagship", widget: "boolean", default: false }
+                  - { label: "Featured Strip", name: "newlyLaunched", widget: "boolean", default: false }
+                  - { label: "Rating", name: "rating", widget: "string", required: false }
+                  - { label: "Client / Brand", name: "learners", widget: "string" }
+                  - { label: "Category", name: "price", widget: "string", required: false }
+                  - { label: "Reel Video or Cover Image", name: "image", widget: "file" }
+                  - { label: "Summary", name: "summary", widget: "text", required: false }
+                  - { label: "Link / Target", name: "registerUrl", widget: "string", required: false }
+
+          - label: "Originals & Field Notes"
+            name: "photoEssays"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Read Time / Label", name: "readTime", widget: "string" }
+              - { label: "Cover Image", name: "coverImage", widget: "image" }
+              - { label: "Excerpt", name: "excerpt", widget: "text" }
+              - { label: "Body", name: "body", widget: "text" }
+
+          - label: "Behind The Camera Section"
+            name: "vibeSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Bento Gallery Slots"
+                name: "photos"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Grid Slot", name: "slot", widget: "string" }
+                  - { label: "Caption", name: "caption", widget: "string" }
+                  - { label: "Media Type", name: "mediaType", widget: "select", options: ["image", "video"], required: false }
+                  - { label: "Poster Image (for video slots)", name: "poster", widget: "image", required: false }
+                  - { label: "Photo or Video", name: "image", widget: "file" }
+
+          - label: "Contact Section"
+            name: "contactSection"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Brands Email", name: "brandsEmail", widget: "string" }
+              - { label: "Creators Email", name: "creatorsEmail", widget: "string" }
+              - label: "Contact Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Link Label", name: "linkLabel", widget: "string" }
+                  - { label: "Action Type", name: "actionType", widget: "string" }
+              - label: "Direct Contact Items"
+                name: "openRoles"
+                widget: "list"
+                fields:
+                  - { label: "ID", name: "id", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Label / Subtitle", name: "type", widget: "string" }
+                  - { label: "Summary", name: "summary", widget: "text" }

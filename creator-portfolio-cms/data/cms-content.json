@@ -1,0 +1,416 @@
+﻿{
+  "site": {
+    "brandName": "Himanshu Thakur",
+    "logoImage": "assets/brand-logo.png",
+    "brandMarkTop": "HT",
+    "brandMarkSub": "VISUALS",
+    "watermarkText": "HIM",
+    "tagline": "EXPECT THE UNEXPECTED — visuals that tell a story with emotions",
+    "copyright": "© 2026 Himanshu Thakur. All rights reserved.",
+    "originNote": "Made in India.",
+    "defaultTheme": "dark",
+    "ctaLabel": "Explore Work",
+    "ctaTarget": "#learn",
+    "socials": {
+      "youtube": "https://youtube.com",
+      "instagram": "https://instagram.com",
+      "x": "https://x.com",
+      "linkedin": "https://linkedin.com",
+      "facebook": "https://facebook.com"
+    }
+  },
+  "hero": {
+    "headline": "EXPECT THE *UNEXPECTED*",
+    "subtitle": "Visuals that tell a story with emotions.",
+    "videoUrl": "uploads/1795602762599_PXL_20231110_060509016.mp4",
+    "image": "assets/hero-doc.jpg",
+    "imageAlt": "Himanshu Thakur — Filmmaker & Visual Storyteller",
+    "aboutTitle": "About Me",
+    "aboutText": "Hi, I’m Himanshu Thakur, a visual storyteller who believes in creating emotions, not just videos.\n\nWith a commerce background, I studied at Shemford School in Kashipur and P.N.G. P.G. College in Ramnagar. I also spent two years working in the corporate world, where I learned a lot—but I realized I wanted to build a life around work that felt more creative and meaningful.\n\nThat journey led me to video creation: a way to tell stories, connect with people, and make every frame feel something. I believe life can take unexpected turns, and that’s what makes the journey exciting.\n\nExpect the unexpected."
+  },
+  "aboutSection": {
+    "eyebrow": "WHO I AM",
+    "heading": "Himanshu *Thakur*",
+    "bio": "I craft emotion-driven visual stories, documentaries, commercial brand films, and atmospheric original cinema rooted in real human experiences.",
+    "portraitImage": "assets/creator-studio.jpg",
+    "portraitBadge": "WHO I AM",
+    "name": "Himanshu Thakur",
+    "profession": "Filmmaker, Visual Storyteller & Video Editor",
+    "education": "Filmmaking & Visual Storytelling (Update your degree / institute in CMS → About Me)",
+    "skills": "Cinematic Documentaries, Short Form Reels, Explainers, Visual Storytelling, Shortfilms, Video Editing, Direction",
+    "work": "Commercial films & reels for 16+ brands (Hero, Himgiri, JJM Hospital, VibeSoft, The Billes, Devsthali) & Original Series: MASAAN"
+  },
+  "formatsSection": {
+    "eyebrow": "HOW I TELL MY STORIES",
+    "heading": "How I tell my stories",
+    "items": [
+      {
+        "id": "fmt-1",
+        "title": "CINEMATIC DOCUMENTARIES",
+        "description": "Atmospheric, character-driven documentaries capturing raw human truth and emotion.",
+        "image": "uploads/cinematic-documentary.jpg",
+        "expanded": false
+      },
+      {
+        "id": "fmt-2",
+        "title": "SHORT FORM",
+        "description": "High-retention reels and vertical edits built to move audiences in under 60 seconds.",
+        "image": "uploads/1795619325031_Screenshot_20261125_191708_YouTube.jpg",
+        "expanded": true
+      },
+      {
+        "id": "fmt-4",
+        "title": "STORY TELLING",
+        "description": "Emotion-first visual narratives crafted for brands, creators, and cinema.",
+        "image": "uploads/1795619335192_file_0000000097848207a712d1502dfdd596.png",
+        "expanded": false
+      },
+      {
+        "id": "fmt-5",
+        "title": "SHORTFILMS",
+        "description": "Independent narrative cinema exploring folklore, suspense, and human psychology.",
+        "image": "uploads/shortfilms-masaan.jpg",
+        "expanded": false
+      }
+    ]
+  },
+  "metrics": {
+    "eyebrow": "PORTFOLIO IMPACT",
+    "primaryNumber": "16",
+    "primarySuffix": "+",
+    "rows": [
+      {
+        "label": "BRANDS COLLABORATED WITH",
+        "value": "16+"
+      },
+      {
+        "label": "COMMERCIAL CAMPAIGNS",
+        "value": "6+"
+      }
+    ]
+  },
+  "brandsSection": {
+    "eyebrow": "TRUSTED BY",
+    "heading": "Brands I have worked with",
+    "items": [
+      {
+        "id": "b-1",
+        "name": "HERO",
+        "icon": "H"
+      },
+      {
+        "id": "b-2",
+        "name": "HIMGIRI",
+        "icon": "HG"
+      },
+      {
+        "id": "b-3",
+        "name": "MAATI CAFE",
+        "icon": "MC"
+      },
+      {
+        "id": "b-4",
+        "name": "JJM HOSPITAL",
+        "icon": "JJ"
+      },
+      {
+        "id": "b-5",
+        "name": "AADARSH INDUSTRIAL",
+        "icon": "AI"
+      },
+      {
+        "id": "b-6",
+        "name": "SKIN CARE & DENTAL CLINIC",
+        "icon": "SC"
+      },
+      {
+        "id": "b-7",
+        "name": "AJMERA TRENDS",
+        "icon": "AT"
+      },
+      {
+        "id": "b-8",
+        "name": "THE BILLES",
+        "icon": "TB"
+      },
+      {
+        "id": "b-9",
+        "name": "FORMULA LIGHTING",
+        "icon": "FL"
+      },
+      {
+        "id": "b-10",
+        "name": "KIMAYA RESORT",
+        "icon": "KR"
+      },
+      {
+        "id": "b-11",
+        "name": "DEVSTHALI AASHIRVAD",
+        "icon": "DA"
+      },
+      {
+        "id": "b-12",
+        "name": "EYE CONTACT",
+        "icon": "EC"
+      },
+      {
+        "id": "b-13",
+        "name": "LICI NONVEG",
+        "icon": "LN"
+      },
+      {
+        "id": "b-14",
+        "name": "ANGEL CROCHET",
+        "icon": "AC"
+      },
+      {
+        "id": "b-15",
+        "name": "I.C.A",
+        "icon": "ICA"
+      },
+      {
+        "id": "b-16",
+        "name": "VIBESOFT",
+        "icon": "VS"
+      }
+    ]
+  },
+  "personalSection": {
+    "eyebrow": "WHAT I HAVE CREATED PERSONALLY",
+    "title": "MASAAN - SERIES",
+    "subtitle": "A Folk Horror / Psychological Thriller",
+    "genre": "Folk Horror, Supernatural Horror, Psychological Thriller, Mystery & Drama",
+    "videoUrl": "uploads/1795603871879_MASAAN___Official_Trailer___Horror_Short_Film_1080P_HD_.mp4",
+    "posterImage": "assets/hero-doc.jpg",
+    "statusBadge": "ORIGINAL SERIES",
+    "description": "MASAAN is a folk-horror psychological thriller rooted in the mysterious beliefs, supernatural folklore and haunting atmosphere of rural Uttarakhand.\n\nThe story explores the thin boundary between reality and the supernatural, bringing together friendship, fear, unexplained occurrences and an unsettling mystery. Through atmospheric storytelling, traditional elements and psychological tension, the film gradually unfolds a narrative where everything may not be as it appears.\n\nBlending supernatural horror with emotional depth and suspense, MASAAN explores themes of loss, mystery, friendship and the unknown. Its narrative builds towards a disturbing revelation that challenges the audience's perception of reality.",
+    "ctaLabel": "▶ Watch Teaser",
+    "ctaUrl": "https://youtu.be/n-qrc63AwaY?si=fjo8jjig22c7_LfN"
+  },
+  "coursesSection": {
+    "eyebrow": "COMMERCIAL WORK",
+    "heading": "Commercial work",
+    "subtitle": "Selected reels edits, brand campaigns, and commercial visual productions.",
+    "items": [
+      {
+        "id": "cw-1",
+        "title": "JJM REELS EDIT",
+        "type": "REELS EDIT",
+        "topic": "Healthcare",
+        "flagship": false,
+        "newlyLaunched": false,
+        "rating": "5.0",
+        "learners": "JJM HOSPITAL",
+        "price": "Commercial",
+        "image": "uploads/1795620925972_lv_0_20260905135228.mp4",
+        "summary": "High-impact vertical reels editing and visual storytelling campaign for JJM Hospital.",
+        "registerUrl": "#register"
+      },
+      {
+        "id": "cw-2",
+        "title": "THE NEST ",
+        "type": "COMMERCIAL",
+        "topic": "HOSPITALITY",
+        "flagship": false,
+        "newlyLaunched": false,
+        "rating": "4.9",
+        "learners": "THE NEST",
+        "price": "Commercial",
+        "image": "uploads/1795623612110_The_Nest_Reel.mp4",
+        "summary": "Commercial brand videos and sleek product storytelling produced for The Nest.",
+        "registerUrl": "#register"
+      },
+      {
+        "id": "cw-3",
+        "title": "MAATI CAFE",
+        "type": "BRAND FILM",
+        "topic": "Automotive",
+        "flagship": false,
+        "newlyLaunched": false,
+        "rating": "5.0",
+        "learners": "HERO",
+        "price": "Commercial",
+        "image": "uploads/1795621135975_Maati_Cafe_Reel.mp4",
+        "summary": "Dynamic commercial video production and visual edits crafted for Hero.",
+        "registerUrl": "#register"
+      },
+      {
+        "id": "cw-4",
+        "title": "THE BILLES",
+        "type": "CAMPAIGN",
+        "topic": "Lifestyle",
+        "flagship": false,
+        "newlyLaunched": false,
+        "rating": "4.9",
+        "learners": "THE BILLES",
+        "price": "Commercial",
+        "image": "uploads/1795621002840_Ibiza_Bar_Opening_Promo.mp4",
+        "summary": "Mood-driven commercial visuals and brand storytelling film for The Billes.",
+        "registerUrl": "#register"
+      },
+      {
+        "id": "cw-5",
+        "title": "DEVSTHALI",
+        "type": "BRAND FILM",
+        "topic": "Real Estate & Hospitality",
+        "flagship": false,
+        "newlyLaunched": false,
+        "rating": "4.9",
+        "learners": "DEVSTHALI AASHIRVAD",
+        "price": "Commercial",
+        "image": "uploads/1795621082764_Vertical_Reel.mp4",
+        "summary": "Cinematic showcase film capturing atmosphere and architecture for Devsthali Aashirvad.",
+        "registerUrl": "#register"
+      },
+      {
+        "id": "cw-6",
+        "title": "HIMGIRI",
+        "type": "COMMERCIAL",
+        "topic": "Brand Film",
+        "flagship": false,
+        "newlyLaunched": false,
+        "rating": "4.9",
+        "learners": "HIMGIRI",
+        "price": "Commercial",
+        "image": "uploads/1795621083319_lv_0_20260816135232.mp4",
+        "summary": "Commercial video production and narrative editing delivered for Himgiri.",
+        "registerUrl": "#register"
+      }
+    ]
+  },
+  "photoEssays": [
+    {
+      "id": "pe-1",
+      "title": "MASAAN — Folk Horror in Rural Uttarakhand",
+      "location": "Uttarakhand, India",
+      "date": "2026",
+      "readTime": "Series Notes",
+      "coverImage": "assets/hero-doc.jpg",
+      "excerpt": "Exploring the thin boundary between reality and the supernatural in MASAAN — a Folk Horror / Psychological Thriller.",
+      "body": "MASAAN is a folk-horror psychological thriller rooted in the mysterious beliefs, supernatural folklore and haunting atmosphere of rural Uttarakhand.\n\nThe story explores the thin boundary between reality and the supernatural, bringing together friendship, fear, unexplained occurrences and an unsettling mystery. Through atmospheric storytelling, traditional elements and psychological tension, the film gradually unfolds a narrative where everything may not be as it appears.\n\nBlending supernatural horror with emotional depth and suspense, MASAAN explores themes of loss, mystery, friendship and the unknown. Its narrative builds towards a disturbing revelation that challenges the audience's perception of reality."
+    },
+    {
+      "id": "pe-2",
+      "title": "On Set: Commercial Campaigns & Reels",
+      "location": "India",
+      "date": "2026",
+      "readTime": "Production Notes",
+      "coverImage": "assets/team-vibe.jpg",
+      "excerpt": "Behind the scenes of commercial shoots for Hero, Himgiri, JJM Hospital, VibeSoft, and The Billes.",
+      "body": "Every commercial project starts with emotion before equipment. Whether cutting fast-paced vertical reels for JJM Hospital or framing atmospheric brand films for Devsthali and Hero, the goal stays constant: expect the unexpected and make every frame feel alive."
+    },
+    {
+      "id": "pe-3",
+      "title": "Bloopers, Gear Tests & Late-Night Edits",
+      "location": "Studio",
+      "date": "2026",
+      "readTime": "Behind the Camera",
+      "coverImage": "assets/creator-studio.jpg",
+      "excerpt": "Unfiltered behind-the-scenes moments, making-of clips, and random creative experiments.",
+      "body": "Some of the strongest visual ideas come from off-script moments between takes—impromptu lighting tests, crew bloopers, and late-night timeline experiments."
+    }
+  ],
+  "vibeSection": {
+    "eyebrow": "SEE WHAT'S BEHIND THE CAMERA",
+    "heading": "Behind the scene, making of video & bloopers",
+    "subtitle": "Behind the scene, making of video, bloopers, random stuff — unfiltered moments from every shoot.",
+    "photos": [
+      {
+        "id": "v-1",
+        "slot": "tall-1",
+        "caption": "Behind the Scene — On-Location Framing",
+        "mediaType": "video",
+        "poster": "assets/hero-doc.jpg",
+        "image": "uploads/1795616628803_20261003_201207.mp4"
+      },
+      {
+        "id": "v-2",
+        "slot": "tall-2",
+        "caption": "Making of Video — Set & Lighting Prep",
+        "image": "assets/creator-studio.jpg"
+      },
+      {
+        "id": "v-3",
+        "slot": "tall-3",
+        "caption": "Bloopers & Candid Set Moments",
+        "mediaType": "video",
+        "poster": "uploads/shortfilms-masaan.jpg",
+        "image": "uploads/1795603871879_MASAAN___Official_Trailer___Horror_Short_Film_1080P_HD_.mp4"
+      },
+      {
+        "id": "v-4",
+        "slot": "stack-top",
+        "caption": "Random Stuff & Camera Rig Tests",
+        "image": "assets/creator-studio.jpg"
+      },
+      {
+        "id": "v-5",
+        "slot": "stack-bottom",
+        "caption": "Location Scouting in Uttarakhand",
+        "mediaType": "video",
+        "poster": "uploads/cinematic-documentary.jpg",
+        "image": "uploads/1795602762599_PXL_20231110_060509016.mp4"
+      },
+      {
+        "id": "v-6",
+        "slot": "wide-left",
+        "caption": "Late-Night Edit & Sound Design",
+        "image": "assets/team-vibe.jpg"
+      },
+      {
+        "id": "v-7",
+        "slot": "wide-right",
+        "caption": "MASAAN Atmospheric Shoot Prep",
+        "image": "assets/hero-doc.jpg"
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "CONTACT ME",
+    "heading": "Let's make something",
+    "brandsEmail": "brands@himanshuthakur.in",
+    "creatorsEmail": "creators@himanshuthakur.in",
+    "cards": [
+      {
+        "id": "ct-1",
+        "title": "For Brands",
+        "description": "Sponsorships, branded films and integrated campaigns.",
+        "linkLabel": "Pitch a collaboration →",
+        "actionType": "brand"
+      },
+      {
+        "id": "ct-2",
+        "title": "For Creators",
+        "description": "Want to collaborate on films, reels, or visual storytelling?",
+        "linkLabel": "Reach out →",
+        "actionType": "creator"
+      },
+      {
+        "id": "ct-3",
+        "title": "Direct Contact",
+        "description": "Commercial shoots, reels edits, or film inquiries with Himanshu Thakur.",
+        "linkLabel": "Send a message →",
+        "actionType": "careers"
+      }
+    ],
+    "openRoles": [
+      {
+        "id": "role-1",
+        "title": "Commercial Shoot & Brand Film Inquiry",
+        "type": "Himanshu Thakur",
+        "summary": "Book commercial production, reels edits, or brand storytelling campaigns."
+      },
+      {
+        "id": "role-2",
+        "title": "MASAAN — Series Collaborations",
+        "type": "Folk Horror / Thriller",
+        "summary": "Connect for festival screenings, distribution, or creative collaborations."
+      }
+    ]
+  },
+  "cmsSettings": {
+    "adminUser": "Himanshu Thakur",
+    "adminPass": "Himcreate@#2004"
+  },
+  "inquiries": []
+}

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himanshu Thakur — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Sticky Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" data-route="home" aria-label="Brand Home">
+        <img id="nav-brand-img" class="brand-logo-img" src="assets/brand-logo.png" alt="Himanshu Thakur Logo" />
+        <span class="brand-mark" id="nav-brand-mark" hidden>HT</span>
+        <span class="brand-sub" id="nav-brand-sub" hidden>VISUALS</span>
+      </a>
+
+      <nav class="nav-right" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link is-active" data-route="home">Home</a>
+        <a href="#learn" class="nav-link" data-route="learn">Commercial Work</a>
+        <a href="#photo-essays" class="nav-link" data-route="photo-essays">Originals</a>
+        <a href="admin.html" class="nav-link nav-cms-link" title="Open CMS Portal">CMS</a>
+
+        <button class="theme-toggle-btn" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle Light / Dark theme">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <a href="#learn" class="btn-pill-orange" id="nav-cta" data-route="learn">Explore Work</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-menu-btn" type="button" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#home" class="nav-link" data-route="home">Home</a>
+      <a href="#learn" class="nav-link" data-route="learn">Commercial Work</a>
+      <a href="#photo-essays" class="nav-link" data-route="photo-essays">Originals</a>
+      <a href="admin.html" class="nav-link">CMS Portal</a>
+      <a href="#learn" class="btn-pill-orange" data-route="learn" id="mobile-cta">Explore Work</a>
+    </div>
+  </header>
+
+  <!-- VIEW 1: HOME PORTFOLIO -->
+  <main id="view-home" class="page-view is-active">
+    <!-- 1. Hero Section (Background Video Playing Behind Text) -->
+    <section class="hero-section">
+      <div class="hero-media">
+        <video id="hero-video" autoplay muted loop playsinline poster="assets/hero-doc.jpg"></video>
+        <img id="hero-image" src="assets/hero-doc.jpg" alt="Himanshu Thakur" hidden />
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text-col">
+          <div class="nf-series-tag">
+            <span class="nf-n-badge">H</span>
+            <span>ORIGINAL PORTFOLIO</span>
+          </div>
+          <h1 class="hero-title" id="hero-headline">
+            EXPECT THE <span class="serif-italic">UNEXPECTED</span>
+          </h1>
+          <p class="hero-subtitle" id="hero-subtitle">
+            Visuals that tell a story with emotions.
+          </p>
+          <div class="nf-hero-actions">
+            <a href="#learn" class="btn-nf-play" data-route="learn">▶ Explore Reels</a>
+            <a href="#personal-creation" class="btn-nf-glass">ⓘ Original Series</a>
+          </div>
+          <div class="social-row" id="hero-socials"></div>
+
+          <div class="hero-about-block" id="hero-about-block">
+            <p class="eyebrow hero-about-heading" id="hero-about-heading">About Me</p>
+            <div class="hero-about-body" id="hero-about-body"></div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn-glass-speaker" id="hero-audio-btn" aria-pressed="false" aria-label="Toggle hero ambience" title="Toggle Hero Ambience">
+        <svg class="icon-sound-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg class="icon-sound-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+      </button>
+    </section>
+
+    <!-- 2. How I Tell My Stories: Expanding Story Formats Accordion -->
+    <section class="section-block">
+      <div class="container">
+        <p class="eyebrow" id="formats-eyebrow">WHAT WE DO</p>
+        <h2 class="section-heading" id="formats-heading">How we tell India's stories</h2>
+
+        <div class="formats-accordion" id="formats-accordion" role="region" aria-label="Content formats"></div>
+      </div>
+    </section>
+
+    <!-- 3. Monthly Impact Metrics -->
+    <section class="section-block metrics-section">
+      <div class="container metrics-grid">
+        <div class="metrics-left">
+          <p class="eyebrow" id="metrics-eyebrow">EVERY SINGLE MONTH</p>
+          <div class="metrics-giant">
+            <span id="metrics-primary">500M</span><span class="accent-plus" id="metrics-suffix">+</span>
+          </div>
+        </div>
+        <div class="metrics-right" id="metrics-rows"></div>
+      </div>
+    </section>
+
+    <!-- 4. Trusted By / Brands -->
+    <section class="section-block brands-section">
+      <div class="container">
+        <p class="eyebrow" id="brands-eyebrow">TRUSTED BY</p>
+        <h2 class="section-heading" id="brands-heading">Brands we've worked with</h2>
+      </div>
+      <div class="brands-marquee-wrap">
+        <div class="brands-track" id="brands-track"></div>
+      </div>
+    </section>
+
+    <!-- 5. Commercial Work & Reels (Netflix Horizontal Rail + Liquid Glass Cards) -->
+    <section class="section-block courses-section">
+      <div class="container">
+        <div class="nf-row-header">
+          <div>
+            <p class="eyebrow" id="courses-eyebrow">COMMERCIAL WORK</p>
+            <h2 class="section-heading" id="courses-heading">Commercial work &amp; reels</h2>
+            <p class="muted-copy section-sub" id="courses-subtitle">
+              Selected reels edits, brand campaigns, and commercial visual productions.
+            </p>
+          </div>
+          <div class="nf-rail-controls">
+            <button type="button" class="nf-rail-btn" id="rail-prev-btn" aria-label="Scroll reels left">‹</button>
+            <button type="button" class="nf-rail-btn" id="rail-next-btn" aria-label="Scroll reels right">›</button>
+          </div>
+        </div>
+
+        <div class="courses-grid nf-rail" id="home-courses-grid"></div>
+
+        <div class="center-cta-row">
+          <button type="button" class="view-all-link" id="view-all-courses-btn">View all work →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. What I Have Created Personally: MASAAN - SERIES -->
+    <section class="section-block masaan-section" id="personal-creation">
+      <div class="masaan-bg-media">
+        <video id="masaan-bg-video" autoplay muted loop playsinline poster="assets/hero-doc.jpg"></video>
+        <div class="masaan-bg-overlay"></div>
+      </div>
+      <div class="container masaan-content">
+        <div class="masaan-text-col">
+          <div class="masaan-badge-row">
+            <span class="masaan-poster-badge" id="masaan-badge">ORIGINAL SERIES</span>
+            <p class="eyebrow" id="masaan-eyebrow" style="margin:0;">WHAT I HAVE CREATED PERSONALLY</p>
+          </div>
+          <h2 class="masaan-title" id="masaan-title">MASAAN - SERIES</h2>
+          <p class="masaan-subtitle serif-italic" id="masaan-subtitle">A Folk Horror / Psychological Thriller</p>
+          <div class="masaan-genres" id="masaan-genres"></div>
+          <div class="masaan-body" id="masaan-body"></div>
+          <div class="masaan-actions">
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="btn-pill-orange" id="masaan-cta-btn">▶ Watch Teaser</a>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn-glass-speaker" id="masaan-audio-btn" aria-pressed="false" aria-label="Toggle Masaan audio" title="Toggle Masaan Audio">
+        <svg class="icon-sound-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+        <svg class="icon-sound-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+        </svg>
+      </button>
+    </section>
+
+    <!-- 7. Vibe / Behind the Camera Bento Collage -->
+    <section class="section-block vibe-section">
+      <div class="container">
+        <p class="eyebrow" id="vibe-eyebrow">VIBE AT STORYFRAME</p>
+        <h2 class="section-heading" id="vibe-heading">The people behind the camera</h2>
+        <p class="muted-copy section-sub" id="vibe-subtitle">
+          Founders, editors, researchers and a lot of chai. This is what a week with us looks like.
+        </p>
+
+        <div class="vibe-bento-grid" id="vibe-bento-grid"></div>
+      </div>
+    </section>
+
+    <!-- 8. Contact Us -->
+    <section class="section-block contact-section" id="contact">
+      <div class="container">
+        <div class="contact-header">
+          <p class="eyebrow" id="contact-eyebrow">CONTACT US</p>
+          <h2 class="section-heading" id="contact-heading">Let's make something</h2>
+        </div>
+
+        <div class="contact-cards-grid" id="contact-cards-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- VIEW 2: COMMERCIAL WORK CATALOG PAGE -->
+  <main id="view-learn" class="page-view">
+    <section class="subpage-hero container">
+      <p class="eyebrow">COMMERCIAL WORK</p>
+      <h1 class="subpage-title">Commercial films &amp; <span class="serif-italic">brand campaigns</span></h1>
+      <p class="muted-copy section-sub">Filter commercial work by project type or industry.</p>
+
+      <div class="catalog-filters">
+        <div class="filter-group" id="type-filters">
+          <button class="filter-pill is-active" data-type="ALL">All Types</button>
+          <button class="filter-pill" data-type="REELS EDIT">Reels Edit</button>
+          <button class="filter-pill" data-type="COMMERCIAL">Commercial</button>
+          <button class="filter-pill" data-type="BRAND FILM">Brand Film</button>
+          <button class="filter-pill" data-type="CAMPAIGN">Campaign</button>
+        </div>
+        <div class="filter-group" id="topic-filters"></div>
+      </div>
+
+      <div class="courses-grid" id="catalog-courses-grid"></div>
+    </section>
+  </main>
+
+  <!-- VIEW 3: ORIGINALS / NOTES PAGE -->
+  <main id="view-photo-essays" class="page-view">
+    <section class="subpage-hero container">
+      <p class="eyebrow">ORIGINALS &amp; NOTES</p>
+      <h1 class="subpage-title">Series notes &amp; <span class="serif-italic">visual dispatches</span></h1>
+      <p class="muted-copy section-sub">Behind MASAAN and stories from set.</p>
+
+      <div class="essays-grid" id="essays-grid"></div>
+    </section>
+  </main>
+
+  <!-- Rounded Footer with Giant Watermark -->
+  <footer class="site-footer">
+    <div class="footer-surface">
+      <div class="container footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <img id="footer-brand-img" class="brand-logo-img" src="assets/brand-logo.png" alt="Himanshu Thakur Logo" />
+            <span class="brand-mark" id="footer-brand-mark" hidden>HT</span>
+            <span class="brand-sub" id="footer-brand-sub" hidden>VISUALS</span>
+          </div>
+          <p class="footer-tagline" id="footer-tagline">EXPECT THE UNEXPECTED — visuals that tell a story with emotions</p>
+          <div class="social-row" id="footer-socials"></div>
+        </div>
+
+        <div class="footer-links-col">
+          <p class="footer-col-label">EXPLORE</p>
+          <ul class="footer-nav-list">
+            <li><a href="#home" data-route="home">Home</a></li>
+            <li><a href="#learn" data-route="learn">Commercial Work</a></li>
+            <li><a href="#photo-essays" data-route="photo-essays">Originals</a></li>
+            <li><a href="admin.html">CMS Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <p class="footer-col-label">GET IN TOUCH</p>
+          <div class="footer-email-block">
+            <span class="footer-email-label">Brands</span>
+            <div class="footer-email-row">
+              <span id="footer-brands-email">brands@himanshuthakur.in</span>
+              <button class="copy-btn" data-copy-target="footer-brands-email" title="Copy email" aria-label="Copy brands email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="footer-email-block">
+            <span class="footer-email-label">Creators</span>
+            <div class="footer-email-row">
+              <span id="footer-creators-email">creators@himanshuthakur.in</span>
+              <button class="copy-btn" data-copy-target="footer-creators-email" title="Copy email" aria-label="Copy creators email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="footer-email-block">
+            <span class="footer-email-label">Direct Contact</span>
+            <button type="button" class="footer-roles-trigger" id="footer-open-roles-btn">Himanshu Thakur →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="container footer-bottom-meta">
+        <span id="footer-copyright">© 2026 Himanshu Thakur. All rights reserved.</span>
+        <span id="footer-origin">Made in India.</span>
+      </div>
+
+      <div class="footer-watermark-wrap" aria-hidden="true">
+        <svg id="footer-watermark-svg" class="footer-watermark-svg" viewBox="0 0 280 90" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="footer-wm-grad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" class="wm-stop-top" />
+              <stop offset="65%" class="wm-stop-mid" />
+              <stop offset="100%" class="wm-stop-bottom" />
+            </linearGradient>
+          </defs>
+          <text id="footer-watermark" class="footer-watermark-text" x="0" y="84" font-size="110" font-weight="800" letter-spacing="10">HIM</text>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Modal (Course Register / Inquiry / Roles / Photo-essay Reader / Lightbox) -->
+  <div class="modal-backdrop" id="site-modal" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close modal">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="site-toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data-store.js"></script>
+  <script src="js/hero-ambience.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
